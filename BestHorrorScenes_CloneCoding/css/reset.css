@@ -46,16 +46,4 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-body {
-  height: 100vh;
-}
-
-header {
-  background-color: #fff;
-  width: 33%;
-}
-header h1 {
-  color: #FF6156;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=reset.css.map */
