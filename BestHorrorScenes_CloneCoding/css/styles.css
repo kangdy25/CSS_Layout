@@ -126,7 +126,7 @@ header nav ul li:hover {
 }
 
 main {
-  background-color: #FF6156;
+  background: #FF6156;
   margin-left: 33%;
 }
 main .top {
@@ -161,6 +161,7 @@ main .movie {
   align-items: center;
   color: #ffffff;
   margin-top: 10%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 5%, transparent, transparent, transparent, transparent) #FF6156;
 }
 main .movie .movie_header {
   display: flex;

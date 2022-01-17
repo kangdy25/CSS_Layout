@@ -82,7 +82,7 @@ header {
 }
 
 main {
-    background-color: $crimson;
+    background: $crimson;
     margin-left: $fixedWidth;
     .top {
         position: fixed;
@@ -116,6 +116,15 @@ main {
         align-items: center;
         color: $white;
         margin-top: 10%;
+        background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 5%,
+        transparent,
+        transparent, 
+        transparent, 
+        transparent
+        )
+        $crimson;
         .movie_header {
             display: flex;
             justify-content: space-between;
