@@ -10,3 +10,68 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    width: 100vw;
+    height: 20vh;
+    border: 1px solid black;
+    .headerleft {
+        position: relative;
+        top: 70px;
+        left: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+            font-size: 13px;
+            font-weight: 400;
+            color: #222;
+            margin-right: 50px;
+        }
+    }
+    .headermid {
+        position: relative;
+        top: 45px;
+        right: 80px;
+    }
+    .headerright {
+        position: relative;
+        top: 70px;
+        right: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+            font-size: 13px;
+            font-weight: 400;
+            color: #222;
+            margin-right: 40px;
+        }
+    }
+}
+main {
+    // position: fixed;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        img {
+            width: 750px;
+            height: 900px;
+        }
+        .square {
+            width: 750px;
+            height: 900px;
+            border: 5px solid red;
+        }
+    }
+}
