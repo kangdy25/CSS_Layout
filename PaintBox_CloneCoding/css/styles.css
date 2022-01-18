@@ -109,18 +109,18 @@ main {
   display: flex;
   flex-direction: column;
 }
-main section {
+main .content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-main section img {
+main .content img {
   width: 750px;
   height: 800px;
 }
-main section .square {
+main .content .square {
   width: 750px;
   height: 800px;
   background: #FBF7F6;
@@ -130,7 +130,7 @@ main section .square {
   align-items: center;
   margin-bottom: 100px;
 }
-main section .square p {
+main .content .square p {
   width: 70%;
   font-size: 35px;
   font-weight: 100;
@@ -138,14 +138,31 @@ main section .square p {
   text-align: center;
   margin-bottom: 60px;
 }
-main section .square button {
+main .content .square button {
   width: 240px;
   height: 60px;
   background: none;
   border: 1px solid black;
 }
-main section .square button:hover {
+main .content .square button:hover {
   background: #333;
   color: white;
   transition: 0.5s;
+}
+main .introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .introduction p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 25px;
+}
+main .introduction h1 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #222;
+  margin-bottom: 100px;
 }/*# sourceMappingURL=styles.css.map */
