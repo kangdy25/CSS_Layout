@@ -258,10 +258,47 @@ main .follow h1 {
   width: 600px;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 150px;
   font-size: 35px;
   font-weight: 300;
   color: #111;
 }
 main .follow h1 i {
   color: #999;
+}
+main footer {
+  height: 275px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #f3f2ed;
+}
+main footer .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  padding: 0px 220px;
+  border-right: 1px solid #333;
+}
+main footer .list p {
+  padding: 15px;
+  font-size: 13px;
+  font-weight: 200;
+  color: #555;
+}
+main footer .list ul {
+  margin: 10px;
+  color: black;
+}
+main footer .list ul li {
+  margin: 13px;
+  font-size: 12px;
+  font-weight: 400;
+}
+main footer .list:nth-child(3) {
+  border: none;
 }/*# sourceMappingURL=styles.css.map */
