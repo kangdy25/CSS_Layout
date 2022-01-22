@@ -236,7 +236,26 @@ main .join h1 {
   color: #111;
   line-height: 1.3;
   padding-bottom: 30px;
-  border-bottom: 1px solid #222;
+}
+main .join .Login-form {
+  margin-top: 40px;
+}
+main .join .Login-form input {
+  width: 600px;
+  height: 75px;
+  background: none;
+  border: none;
+  font: 30px Georgia;
+  opacity: 0.7;
+  border-bottom: 3px solid #aaa;
+}
+main .join .Login-form button {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: 500;
 }
 main .grid {
   margin-top: 100px;
