@@ -248,6 +248,7 @@ main .join .Login-form input {
   font: 30px Georgia;
   opacity: 0.7;
   border-bottom: 3px solid #aaa;
+  outline: none;
 }
 main .join .Login-form button {
   width: 50px;
