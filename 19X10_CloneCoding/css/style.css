@@ -54,6 +54,86 @@ a {
 }
 
 body {
-  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #7c4600;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.5fr 1.8fr 1.5fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  gap: 1px;
+}
+body > *:not(script) {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a8650e;
+  font-size: 27px;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.menu {
+  grid-column-start: -2;
+}
+
+.center-img {
+  grid-column: 2/-2;
+  grid-row: 2/-2;
+  background-image: url("https://as2.ftcdn.net/v2/jpg/03/59/21/03/1000_F_359210379_JEPkDtownwnn0dMgw08RaT70KI9tvKD5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.number_row {
+  background-color: #a8650e;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  height: 100%;
+  align-items: stretch;
+}
+.number_row .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  transition: color 0.3s linear, background-color 0.3s linear;
+}
+.number_row .number:hover {
+  background: #a8650e;
+  color: white;
+}
+
+.scrolling_text {
+  grid-column-start: 2;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.scrolling_text span {
+  -webkit-animation: scrollText 3s linear infinite forwards;
+          animation: scrollText 3s linear infinite forwards;
+}
+
+@-webkit-keyframes scrollText {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(-100px);
+  }
 }/*# sourceMappingURL=style.css.map */
