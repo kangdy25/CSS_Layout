@@ -61,6 +61,7 @@ body {
 header {
   width: 100%;
   position: fixed;
+  top: 0;
   height: 50px;
   background-color: white;
   align-items: center;
@@ -95,4 +96,31 @@ header nav ul:first-child li:first-child {
 header nav ul:first-child li:not(:first-child) {
   color: gainsboro;
   margin-right: 50px;
+}
+
+main {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 50vh;
+}
+main article {
+  cursor: pointer;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 9fr 1fr;
+}
+main article img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main article div {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

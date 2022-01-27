@@ -14,6 +14,7 @@ body {
 header {
     width: 100%;
     position: fixed;
+    top: 0;
     height: 50px;
     background-color: white;
     align-items: center;
@@ -52,6 +53,32 @@ header {
                     }
                 }
             }
+        }
+    }
+}
+
+main {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50vh;
+    article {
+        cursor: pointer;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 9fr 1fr;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            padding-left: 10px;
+            font-size: 14px;
+            font-weight: 500;
         }
     }
 }
