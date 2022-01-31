@@ -1,3 +1,17 @@
 %titles {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+%btns {
+    border: $border;
+    padding: 10px 20px;
     font-weight: 500;
+    border-radius: 99px;
+    transition: background-color 0.25s linear;
+    &:hover {
+        background-color: black;
+        color: white;
+    }
 }
