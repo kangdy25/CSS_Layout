@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Yrsa:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 60px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 100%;
+  padding: 0px 10%;
+}
+header h1 {
+  place-self: center center;
+  font-family: "Yrsa";
+}
+header > span {
+  justify-self: end;
+}
+header nav ul {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+}
+header nav ul li:not(:last-child) {
+  margin-right: 30px;
+}
+header .logo {
+  font-size: 35px;
+  font-weight: 700;
+  display: flex;
+}
+header .logo div {
+  transform: rotateZ(-15deg);
+  margin: 0px -1px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: calc(100vh - 60px);
+}
+.hero .hero_img {
+  background-image: url("https://source.unsplash.com/random/");
+  background-size: cover;
+  background-position: center center;
+}/*# sourceMappingURL=style.css.map */
