@@ -75,6 +75,7 @@ header {
   align-items: center;
   width: 100%;
   padding: 0px 10%;
+  background: white;
 }
 header h1 {
   place-self: center center;
@@ -156,13 +157,19 @@ header .logo div {
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 50vh;
+  grid-template-rows: repeat(3, 50vh);
 }
 .gallery .gallery_item {
-  background-image: url("https://source.unsplash.com/random/");
   background-size: cover;
   background-position: center;
+  background-image: url("https://source.unsplash.com/random/");
+  transition: all 0.2s linear;
+  cursor: pointer;
+  overflow: hidden;
 }
-.gallery .gallery_item:first-child {
+.gallery .gallery_item:first-child, .gallery .gallery_item:nth-child(5), .gallery .gallery_item:nth-child(7), .gallery .gallery_item:nth-child(10) {
   grid-column-start: span 2;
+}
+.gallery .gallery_item:hover {
+  filter: blur(25px);
 }/*# sourceMappingURL=style.css.map */

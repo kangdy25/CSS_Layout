@@ -28,6 +28,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 0px 10%;
+    background: white;
     h1 {
         place-self: center center;
         font-family: "Yrsa";
@@ -111,13 +112,22 @@ header {
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50vh;
+    grid-template-rows: repeat(3, 50vh);
     .gallery_item {
-        background-image: url("https://source.unsplash.com/random/");
         background-size: cover;
         background-position: center;
-        &:first-child {
+        background-image: url("https://source.unsplash.com/random/");
+        transition: all 0.2s linear;
+        cursor: pointer;
+        overflow: hidden;
+        &:first-child,
+        &:nth-child(5),
+        &:nth-child(7),
+        &:nth-child(10) {
             grid-column-start: span 2;
+        }
+        &:hover {
+            filter: blur(25px);
         }
     }
 }
