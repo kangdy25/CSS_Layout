@@ -55,8 +55,9 @@ table {
 }
 
 a {
-  text-decoration: none;
-  color: black;
+  font-weight: 600;
+  color: #ff8800;
+  text-decoration: underline;
 }
 
 body {
@@ -108,4 +109,60 @@ header .logo div {
   background-image: url("https://source.unsplash.com/random/");
   background-size: cover;
   background-position: center center;
+}
+.hero .hero_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero .hero_text h2 {
+  font-size: 50px;
+  text-align: center;
+  width: 80%;
+  font-weight: 600;
+  margin-bottom: 40px;
+  line-height: 1.3;
+  letter-spacing: -2px;
+}
+.hero .hero_text span {
+  font-size: 12px;
+}
+
+.banner {
+  background-color: #ebc752;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.banner h3 {
+  font-family: "Yrsa";
+  font-size: 56px;
+  margin-bottom: 30px;
+}
+.banner p {
+  width: 50%;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.banner span {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50vh;
+}
+.gallery .gallery_item {
+  background-image: url("https://source.unsplash.com/random/");
+  background-size: cover;
+  background-position: center;
+}
+.gallery .gallery_item:first-child {
+  grid-column-start: span 2;
 }/*# sourceMappingURL=style.css.map */
