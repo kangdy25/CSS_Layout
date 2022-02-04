@@ -79,4 +79,63 @@ body {
 
 .posts {
     margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 55vh;
+    .post {
+        padding: 20px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        .post_header,
+        footer {
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 1px;
+        }
+        &:nth-child(4n + 1) {
+            background-color: #E2D3B7;
+        }
+        &:nth-child(4n + 2) {
+            background-color: #B5CAC0;
+        }
+        &:nth-child(4n + 3) {
+            background-color: #C97B37;
+        }
+        .post_content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                letter-spacing: 2px;
+                line-height: 1.3;
+                font-size: 26px;
+                text-align: center;
+            }
+            .invisible {
+                display: none;
+                width: 100%;
+                height: 100%;
+                background-image: url("https://source.unsplash.com/random/");
+                background-position: center center;
+            }
+        }
+        &:hover {
+            .post_content {
+                .visible {
+                    display: none;
+                }
+                .invisible {
+                    display: block;
+                }
+            }
+        }
+    }
 }
