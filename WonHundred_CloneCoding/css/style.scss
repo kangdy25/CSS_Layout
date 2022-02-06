@@ -84,6 +84,7 @@ main {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 80vh auto;
         background-color: black;
+        
         gap: 1px;
         .product, 
         .arrivals_category {
@@ -101,6 +102,8 @@ main {
             gap: 20px;
             grid-template-rows: 80% auto auto;
             .product_photo {
+                background-position: center center;
+                background-size: cover;
                 background-color: black;
             }
             .product_data {

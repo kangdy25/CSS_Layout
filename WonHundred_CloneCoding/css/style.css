@@ -146,6 +146,8 @@ main h6 {
   grid-template-rows: 80% auto auto;
 }
 .arrivals .wrapper .product .product_photo {
+  background-position: center center;
+  background-size: cover;
   background-color: black;
 }
 .arrivals .wrapper .product .product_data {
